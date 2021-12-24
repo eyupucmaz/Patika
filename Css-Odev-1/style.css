@@ -164,3 +164,68 @@ footer{
    background-color: var(--main-color);
    color: #fff;
 }
+
+.contact-container{
+   width: 100%;
+   display: grid;
+   place-items: center;
+}
+.contact{
+   width: 30%;
+}
+.contact form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2em;
+
+}
+
+.box{
+   width: 100%;
+   padding: 0.6em;
+   color: var(--second-color);
+   display: flex;
+   flex-direction: column;
+}
+
+.box>label {
+   font-size: 1.5em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.box> input{
+   font-size: 1.6em;
+   background-color: var(--third-color);
+   border: none;
+   border-radius: 1em;
+   color: #000;
+   padding-left:.4em ;
+   outline: solid 1px var(--second-color);
+}
+.box>textarea{
+   background-color: var(--third-color);
+   border: none;
+   border-radius: 1em;
+   padding: 1em;
+}
+
+.box>button{
+   border: none;
+   font-size: 1.6em;
+   color: var(--second-color);
+   background-color: var(--third-color);
+   border-radius: 1em;
+   padding: .5em;
+   font-weight: bold;
+   
+}
+
+.box > button:hover{
+   background-color: var(--second-color);
+   color: var(--third-color);
+   transition: all .4s ease-out;
+   cursor: pointer;
+}
