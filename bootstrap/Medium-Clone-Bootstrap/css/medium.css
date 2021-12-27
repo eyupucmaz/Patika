@@ -1,0 +1,31 @@
+.bg-yellow{
+   background-color: #FFC017;
+}
+.border-bottom-1{
+   border-bottom: 1px solid #292929;
+}
+
+.header-h1{
+   font-family: 'Roboto Slab', serif;
+   
+}
+
+.medium-btn-dark{
+   border-radius: 3em;
+   padding: 0.5em 1em  !important;
+   font-weight: lighter;
+   background-color: #191818 ;
+}
+
+.medium-btn-light{
+   border-radius: 3em;
+   padding: 0.5em 1.2em  !important;
+   background-color: #FEFEFF;
+}
+
+.medium-logo{
+   font-family: 'Roboto Slab', serif;
+   font-weight: 500;
+   font-size: 1.6em;
+ 
+}
