@@ -1,9 +1,9 @@
 // let userName = prompt("What's your name?");
 
-let userName = "eyup";
+// let userName = "eyup";
 
-let myName = document.querySelector("#myName");
-myName.innerHTML = userName;
+// let myName = document.querySelector("#myName");
+// myName.innerHTML = userName;
 
 const domClock = document.querySelector(".clock");
 
@@ -37,3 +37,4 @@ function checkTime(i) {
 	} // add zero in front of numbers < 10
 	return i;
 }
+
