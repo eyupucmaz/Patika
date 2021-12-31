@@ -30,4 +30,16 @@ console.log(items.indexOf(2));
 
 // In js it will be exact same array when you copy an array like that let copy = anarray;
 // 
-items.slice
+let copyItems = items.slice()
+console.log(copyItems);
+console.log(items);
+
+// ES6 copy
+let es6Copy = [...items];
+console.log(es6Copy);
+
+// Foreach Loop with array
+
+const products = ["LAPTOP","PHONE","SPEAKER","DESPKTOP PC","SERVER","MOUSE","KEYBOARD"];
+
+products.forEach((product,index,array)=>console.log(index));
