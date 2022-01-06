@@ -1,5 +1,7 @@
 import "./App.css";
 import { useState } from "react";
+import Counter from "./components/Counter";
+import InputExample from "./components/InputExample";
 
 function App() {
 	const [name, setName] = useState("Eyup");
@@ -29,9 +31,16 @@ function App() {
 				{address.title} {address.zip}
 			</div>
 			<br />
-			<button onClick={() => setAddress({ ...address,title: "ankara" })}>
+			<button onClick={() => setAddress({ ...address, title: "ankara" })}>
 				Set Adress
 			</button>
+
+			<hr />
+			<br />
+			<Counter />
+			<hr />
+			<InputExample />
+			<hr />
 		</div>
 	);
 }
