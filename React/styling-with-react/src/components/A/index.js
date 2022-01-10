@@ -1,8 +1,9 @@
-import "./styles.css"
+import styles from "./styles.module.css"
 
 export default function A() {
+   console.log(styles);
    return (
-      <div className="title">
+      <div className={styles.title}>
          A
       </div>
    )
