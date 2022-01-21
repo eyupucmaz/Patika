@@ -8,6 +8,7 @@ export default function Signup() {
 			firstName: "",
 			lastName: "",
 			email: "",
+			gender: "",
 		},
 		validationSchema: Yup.object({
 			firstName: Yup.string()
@@ -17,6 +18,7 @@ export default function Signup() {
 				.max(20, "Must be 15 Characters or less")
 				.required("Required"),
 			email: Yup.string().required("Required").email("Invalid email"),
+			gender: Yup.string().required("Required"),
 		}),
 		onSubmit: (values) => {
 			console.log(values);
@@ -65,6 +67,28 @@ export default function Signup() {
 					/>
 					{formik.touched.email && formik.errors.email ? (
 						<p>*{formik.errors.email}</p>
+					) : null}
+				</div>
+				<div className="input-container">
+					<label htmlFor="female">Female</label>
+					<input
+						type="radio"
+						name="gender"
+						id="female"
+						value="female"
+						onChange={formik.handleChange}
+					/>
+					<label htmlFor="male">Male</label>
+					<input
+						type="radio"
+						name="gender"
+						id="male"
+						value="male"
+						onChange={formik.handleChange}
+						onBlur={formik.handleBlur}
+					/>
+					{formik.touched.gender && formik.errors.gender ? (
+						<p>*{formik.errors.gender}</p>
 					) : null}
 				</div>
 				<button type="submit">Submit</button>
